@@ -1,0 +1,242 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.heroSection {
+  background: linear-gradient(135deg, #ffeb3b 0%, #ff9800 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 0 2rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(255, 152, 0, 0.3);
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.heroDescription {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.servicesSection {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.serviceCard {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.serviceTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #ff9800;
+}
+
+.serviceDescription {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.servicePrice {
+  font-weight: 600;
+  color: #333;
+}
+
+.processSection {
+  background: #f9f9f9;
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+}
+
+.processContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.processList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.processItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.processIcon {
+  background: linear-gradient(135deg, #ffeb3b 0%, #ff9800 100%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+}
+
+.processTitle {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.processDescription {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.modelsSection {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.modelsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.modelBadge {
+  background: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.modelBadge:hover {
+  background: #ff9800;
+  color: white;
+  transform: scale(1.05);
+}
+
+.whyChooseSection {
+  background: linear-gradient(135deg, rgba(255, 235, 59, 0.1) 0%, rgba(255, 152, 0, 0.1) 100%);
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+  border-radius: 2rem;
+}
+
+.whyChooseContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reasonsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.reasonCard {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.reasonIcon {
+  background: linear-gradient(135deg, #ffeb3b 0%, #ff9800 100%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.reasonTitle {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.reasonDescription {
+  color: #666;
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroDescription {
+    font-size: 1rem;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicesGrid,
+  .processList,
+  .reasonsGrid {
+    grid-template-columns: 1fr;
+  }
+}
